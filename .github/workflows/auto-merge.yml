@@ -29,6 +29,7 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           labels: "automerge"
+          color: "0000ff"
   automerge:
     runs-on: ubuntu-latest
     needs: add-label
