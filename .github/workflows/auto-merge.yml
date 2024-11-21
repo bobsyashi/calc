@@ -20,6 +20,7 @@ on:
 jobs:
   add-label:
     runs-on: ubuntu-latest
+    if: contains(github.event.pull_request.title, 'FIREFIGHT')
     permissions:
       contents: write
       pull-requests: write
